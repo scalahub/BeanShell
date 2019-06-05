@@ -197,7 +197,12 @@ public class JConsole extends JScrollPane
         gotUp=true;
         type( e );
     }
-
+    public void addHistory(String s) {
+        history.add( s );
+    }
+    public List<String> getHistory() {
+        return history;
+    }
     private synchronized void type( KeyEvent e ) {
         switch ( e.getKeyCode() )
         {
