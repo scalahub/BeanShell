@@ -7,20 +7,14 @@ libraryDependencies ++= Seq(
   "org.hamcrest" % "hamcrest-all" % "1.3"
 )
 
+version := "1.0"
+
+scalaVersion := "2.12.10"
+
+description := "Modified version of Beanshell"
+
 unmanagedSourceDirectories in Compile += baseDirectory.value / "target/generated-sources"
 
-name := "BeanShell" 
+name := "BeanShell-mod"
 
-organization := "scalahub" 
-
-//scalaVersion := "2.12.8"   // comment this line to use Scala 2.13-RC1
-
-scmInfo := Some(
-  ScmInfo(  
-    url(s"https://github.com/scalahub/$name"),
-    s"git@github.com:scalahub/$name.git"
-  )
-)
-
-version := "0.1.0"
-
+organization := "io.github.scalahub"
