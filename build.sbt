@@ -13,7 +13,7 @@ scalaVersion := "2.12.10"
 
 description := "Modified version of Beanshell"
 
-unmanagedSourceDirectories in Compile += baseDirectory.value / "target/generated-sources"
+unmanagedSourceDirectories in Compile += baseDirectory.value / "generated-sources"
 
 name := "BeanShell-mod"
 
